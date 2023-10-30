@@ -167,6 +167,7 @@ ggplot(umap_df, aes(x=x, y=y, color=cluster, shape=cluster)) +
 ```
 
 ![](clustering_R_files/figure-html/umap_projection-1.png)<!-- -->
+
 After inspecting the UMAP projection of the clustering best result, we exclude cluster 5 samples of our project as probably there's some technical issue with them; and they could distort scaling results. 
 Now this filtered data needs to be scaled, and then we will run the clustering again, obtaining the final groups of samples.
 
