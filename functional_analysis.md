@@ -54,6 +54,7 @@ ids_4 <- bitr(up_4, fromType = "ENSEMBL", toType = c("SYMBOL","ENTREZID"), OrgDb
 ```
 
 # Enrichment analysis with GO biological process
+For both enrichment analysis with GO BP and Reactome pathways, terms with a gene count of 2 or less will be discarted for biological interpretation.
 
 ```r
 enrichGO_result_1 <- enrichGO(gene = ids_1$SYMBOL, OrgDb = org.Hs.eg.db, keyType = "SYMBOL", ont = "BP", pAdjustMethod = "BH", qvalueCutoff = 0.05)
