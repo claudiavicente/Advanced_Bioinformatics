@@ -164,7 +164,7 @@ ggplot(umap_df, aes(x=x, y=y, color=cluster, shape=cluster)) +
   theme_light()
 ```
 
-![](clustering_R1_files/figure-html/umap projection-1.png)<!-- -->
+![](clustering_R1_files/figure-html/umap_projection-1.png)<!-- -->
 We can conclude that we have 4 well defined groups of samples, so we are going to store in a file to which cluster each sample belongs, for further analysis.
 
 ```r
