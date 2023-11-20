@@ -65,25 +65,25 @@ enrichGO_result_4 <- enrichGO(gene = ids_4$SYMBOL, OrgDb = org.Hs.eg.db, keyType
 dotplot(enrichGO_result_1, showCategory = 10, title = "Enriched GO Biological processes in cluster 1 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/GO enrichment-1.png)<!-- -->
+![](functional_analysis_files/figure-html/GO_enrichment-1.png)<!-- -->
 
 ```r
 dotplot(enrichGO_result_2, showCategory = 10, title = "Enriched GO Biological processes in cluster 2 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/GO enrichment-2.png)<!-- -->
+![](functional_analysis_files/figure-html/GO_enrichment-2.png)<!-- -->
 
 ```r
 dotplot(enrichGO_result_3, showCategory = 10, title = "Enriched GO Biological processes in cluster 3 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/GO enrichment-3.png)<!-- -->
+![](functional_analysis_files/figure-html/GO_enrichment-3.png)<!-- -->
 
 ```r
 dotplot(enrichGO_result_4, showCategory = 10, title = "Enriched GO Biological processes in cluster 4 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/GO enrichment-4.png)<!-- -->
+![](functional_analysis_files/figure-html/GO_enrichment-4.png)<!-- -->
 
 # Enrichment analysis with reactome pathways
 
@@ -95,22 +95,22 @@ enrich_reactome_4 <- enrichPathway(gene = ids_4$ENTREZID, pvalueCutoff = 0.05)
 dotplot(enrich_reactome_1, showCategory = 10, title = "Enriched reactome pathways in cluster 1 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/reactome enrichment-1.png)<!-- -->
+![](functional_analysis_files/figure-html/reactome_enrichment-1.png)<!-- -->
 
 ```r
 dotplot(enrich_reactome_2, showCategory = 10, title = "Enriched reactome pathways in cluster 2 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/reactome enrichment-2.png)<!-- -->
+![](functional_analysis_files/figure-html/reactome_enrichment-2.png)<!-- -->
 
 ```r
 dotplot(enrich_reactome_3, showCategory = 10, title = "Enriched reactome pathways in cluster 3 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/reactome enrichment-3.png)<!-- -->
+![](functional_analysis_files/figure-html/reactome_enrichment-3.png)<!-- -->
 
 ```r
 dotplot(enrich_reactome_4, showCategory = 10, title = "Enriched reactome pathways in cluster 4 DEGs")
 ```
 
-![](functional_analysis_files/figure-html/reactome enrichment-4.png)<!-- -->
+![](functional_analysis_files/figure-html/reactome_enrichment-4.png)<!-- -->
