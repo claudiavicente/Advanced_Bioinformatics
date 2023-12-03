@@ -33,7 +33,7 @@ library(ggplot2)
 
 # Open the data
 
-To get the final groups of samples, we will use the previously scaled data using Python; and the same methods applied in the R Markdown clustering_R.
+To get the final groups of samples, we will use the previously scaled data using Python; and the same methods applied in the R Markdown clustering_R. **IMPORTANT NOTE**: Because of the complexity of our data and to obtain some results, here we perform the clustering onto the UMAP dimentions to simplify a lot the input matrix used on NbClust, but this mustn't be done like this. The correct way to perform clustering is on the scaled data, and then UMAP can be used for visualization purposes.
 
 ```r
 setwd('/Volumes/TOSHIBA/4t/Advanced Bioinformatics/Project/Python/')
